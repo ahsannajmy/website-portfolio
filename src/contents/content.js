@@ -13,3 +13,18 @@ export const headerContent = `
 
 export const navItemsRight = ["HOME", "ABOUT ME", "PROJECTS", "SERTIFICATE", "CONTACT"];
 export const navItemsLeft = ["CV Download"];
+
+export const educationList = [
+    {
+        range_tahun : "2016 - 2019",
+        nama_institusi : "SMAN 26 Jakarta",
+        jurusan : "Science Major",
+        deskripsi_lainnya : ""
+    },
+    {
+        range_tahun : "2019 - 2024",
+        nama_institusi : "Universitas Indoensia",
+        jurusan : "Computer Science",
+        deskripsi_lainnya : "GPA 3.31" 
+    }
+]

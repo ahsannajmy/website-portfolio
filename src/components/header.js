@@ -26,7 +26,7 @@ function HeaderContent({ text }) {
 
 function ButtonSecondary({ text }) {
   return (
-    <button className='bg-secondary-color p-3 rounded-md text-main-color font-bold'>
+    <button className='bg-secondary-color p-3 rounded-lg drop-shadow-lg text-main-color font-bold'>
       { text }
     </button>
   )

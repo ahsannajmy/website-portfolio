@@ -9,11 +9,14 @@ module.exports = {
       colors : {
         'main-color' : '#503D3F',
         'secondary-color' : '#EFE6DD',
-        'hover-secondary' : '#D9C6B9'
+        'hover-secondary' : '#D9C6B9',
+        'card-color' : '#EBDDCF'
       },
       fontSize : {
         'sm' : '12px',
+        'sm-2' : '10px',
         'lg' : '48px',
+        'lg-2' : '36px',
         'md' : '15px'
       },
       dropShadow: {
