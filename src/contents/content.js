@@ -2,7 +2,9 @@ import excelImg from "../assets/skills-1.png";
 import pythonImg from "../assets/skills-2.png"; 
 import awsImg from "../assets/skills-3.png";
 import javascriptImg from "../assets/skills-4.png";
-
+import dockerImg from "../assets/skills-5.png"
+import javaImg from "../assets/skills-6.png";
+import postgresImg from "../assets/skills-7.png";
 
 export const headerContent = `
     I recently received my bachelor's degree in computer science. 
@@ -37,48 +39,24 @@ export const educationList = [
 
 export const skillList = [
     {
-        imgName : excelImg,
-        skillList : [
-            "Pivot Chart", 
-            "Pivot Table", 
-            "Aggregate Function", 
-            "Formatting Function", 
-            "Data Validation", 
-            "Conditional If-Else",
-            "Vlookup & Index Match",
-            "Slicer",
-            "Macro VBA"
-        ]
+        imgName : excelImg
     },
     {
-        imgName : pythonImg,
-        skillList : [
-            "NumPy",
-            "Pandas",
-            "Matplotlib",
-            "Seaborn",
-            "Sckit-learn",
-            "BeautifulSoup",
-            "Request"
-        ]
+        imgName : pythonImg
     },
     {
-        imgName : awsImg,
-        skillList : [
-            "Amazon EC2",
-            "Amazon S3",
-            "Amazon IAM",
-        ]
+        imgName : awsImg
     },
     {
-        imgName : javascriptImg,
-        skillList : [
-            "Hapi",
-            "Express",
-            "Promise",
-            "Asynchronous",
-            "Node Js",
-        ]
+        imgName : javascriptImg
+    },
+    {
+        imgName : dockerImg
+    },
+    {
+        imgName : javaImg
+    },
+    {
+        imgName : postgresImg
     }
-
 ]

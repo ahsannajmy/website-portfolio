@@ -18,9 +18,11 @@ export default function EducationSkills() {
       </div>
       <div className="flex flex-col space-y-2">
         <h1 className="text-main-color text-lg-2 font-bold">Skills</h1>
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-wrap items-center gap-y-4">
           {skillList.map((skill) => (
-            <CardSkills imgName={skill.imgName} skillList={skill.skillList}/>
+            <div className="w-[calc(25%-1rem)]">
+              <CardSkills imgName={skill.imgName}/>
+            </div>
           ))}
         </div>
       </div>
@@ -41,21 +43,6 @@ function CardEducation({ range_tahun, nama_institusi, jurusan, deskripsi_lainnya
 
 function CardSkills({ imgName, skillList }) {
   return (
-    <div className="flex flex-row gap-2">
-      <img src={imgName} alt="img-skills" className="w-[90px] h-[90px]"/>
-      <div className="flex flex-wrap gap-2 items-start">
-        {skillList.map((skill) => (
-          <Skills skill={skill}/>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function Skills({ skill }) {
-  return (
-    <div className="bg-card-color p-2.5 drop-shadow-lg rounded-md">
-      <p className="text-main-color text-sm font-bold">{ skill }</p>
-    </div>
+    <img src={imgName} alt="img-skills" className="w-[90px] h-[90px]"/>
   );
 }

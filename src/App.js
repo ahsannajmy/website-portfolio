@@ -1,7 +1,7 @@
 import Navbar from './components/navbar.js';
 import Header from './components/header.js'  
 import EducationSkills from './components/education-skills.js';
-import WaveSecondary from './contents/wave.js';
+import { WavePrimary, WaveSecondary } from './contents/wave.js';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <div className='bg-secondary-color'>
         <WaveSecondary/>
         <EducationSkills/>
+        <WavePrimary/>
       </div>
     </div>
   )
