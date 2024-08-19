@@ -35,7 +35,7 @@ export const educationList = [
         jurusan : "Computer Science",
         deskripsi_lainnya : "GPA 3.31" 
     }
-]
+];
 
 export const skillList = [
     {
@@ -58,5 +58,35 @@ export const skillList = [
     },
     {
         imgName : postgresImg
+    }
+];
+
+
+export const projectProperties = [
+    {
+        projectName : "Final Assignment (Classification of Criminal Verdict Documents)",
+        projectDesc : [
+            `
+            Build a classification model using python with CNN and LSTM architecture also with other machine learning models
+            to predict or classify a criminal verdict. This prediction is based on the components inside of each documents
+            such as (articles, sentences, type of case, lawyer's name, judge's name, court location, and other components)
+            `,
+            `
+            In this project i'm also collecting criminal verdict documents from official site of supreme court in indonesia
+            this collecting process was done through one of python library BeautifulSoup
+            `,
+            `
+            This project also includes gathering, processing and cleaned the documents that have been collected and applying
+            to an existing tag model and then proceed to the CNN, LSTM and other machine learning model for training for more
+            details here are my paper
+            `
+        ],
+        skillList : []
+    },
+    {
+
+    },
+    {
+
     }
 ]

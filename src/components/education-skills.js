@@ -2,7 +2,7 @@ import { educationList, skillList } from "../contents/content"
 
 export default function EducationSkills() {
   return (
-    <div className="bg-secondary-colo flex flex-row justify-evenly items-start max-w-5xl mx-auto py-20 gap-20">
+    <div className="bg-secondary-color flex flex-row justify-evenly items-start max-w-5xl mx-auto py-20 gap-20">
       <div class="flex flex-col space-y-2">
         <h1 className="text-main-color text-lg-2 font-bold">Education</h1>
         <div className="flex flex-col gap-4">
@@ -27,7 +27,7 @@ export default function EducationSkills() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function CardEducation({ range_tahun, nama_institusi, jurusan, deskripsi_lainnya }) {
@@ -38,7 +38,7 @@ function CardEducation({ range_tahun, nama_institusi, jurusan, deskripsi_lainnya
       <h3 className="text-main-color text-sm-2 font-bold">{ jurusan }</h3>
       <h3 className="text-main-color text-sm-2 font-semibold">{ deskripsi_lainnya }</h3>
     </div>
-  )
+  );
 }
 
 function CardSkills({ imgName, skillList }) {

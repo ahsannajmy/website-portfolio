@@ -18,7 +18,7 @@ export default function Navbar() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function NavItem({ text }) {
@@ -30,5 +30,5 @@ function NavItem({ text }) {
     }}>
       {text}
     </button>
-   )
+   );
 }

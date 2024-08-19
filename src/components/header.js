@@ -3,11 +3,11 @@ import { headerContent } from '../contents/content';
 
 export default function Header() {
   return (
-    <div className="bg-main-color flex justify-between items-center max-w-5xl mx-auto py-20 gap-6">
-      <div className='flex items-center max-w-screen-lg'>
-        <img src={profileImage} alt="img-profile" className='rounded-full object-cover'></img>
+    <div className="bg-main-color flex flex-row items-center max-w-5xl mx-auto py-20 gap-20">
+      <div className='flex-shrink-0'>
+        <img src={profileImage} alt="img-profile" className='rounded-full w-[262px] h-[262px] object-cover'></img>
       </div>
-      <div className='flex flex-col items-start space-y-6'>
+      <div className='flex flex-col items-start gap-4'>
         <h1 className='text-secondary-color text-lg font-bold'>Hi, I'm Ahsan</h1>
         <HeaderContent text={headerContent}/>
         <ButtonSecondary text={"Projects"}/>
@@ -21,7 +21,7 @@ function HeaderContent({ text }) {
     <p className='text-secondary-color text-sm font-semibold text-justify'>
       { text }
     </p>
-  )
+  );
 }
 
 function ButtonSecondary({ text }) {
@@ -29,5 +29,5 @@ function ButtonSecondary({ text }) {
     <button className='bg-secondary-color p-3 rounded-lg drop-shadow-lg text-main-color font-bold'>
       { text }
     </button>
-  )
+  );
 }
