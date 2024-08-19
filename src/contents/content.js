@@ -1,3 +1,9 @@
+import excelImg from "../assets/skills-1.png";
+import pythonImg from "../assets/skills-2.png"; 
+import awsImg from "../assets/skills-3.png";
+import javascriptImg from "../assets/skills-4.png";
+
+
 export const headerContent = `
     I recently received my bachelor's degree in computer science. 
     I have the motivation to work in the technology field, specifically 
@@ -27,4 +33,52 @@ export const educationList = [
         jurusan : "Computer Science",
         deskripsi_lainnya : "GPA 3.31" 
     }
+]
+
+export const skillList = [
+    {
+        imgName : excelImg,
+        skillList : [
+            "Pivot Chart", 
+            "Pivot Table", 
+            "Aggregate Function", 
+            "Formatting Function", 
+            "Data Validation", 
+            "Conditional If-Else",
+            "Vlookup & Index Match",
+            "Slicer",
+            "Macro VBA"
+        ]
+    },
+    {
+        imgName : pythonImg,
+        skillList : [
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "Seaborn",
+            "Sckit-learn",
+            "BeautifulSoup",
+            "Request"
+        ]
+    },
+    {
+        imgName : awsImg,
+        skillList : [
+            "Amazon EC2",
+            "Amazon S3",
+            "Amazon IAM",
+        ]
+    },
+    {
+        imgName : javascriptImg,
+        skillList : [
+            "Hapi",
+            "Express",
+            "Promise",
+            "Asynchronous",
+            "Node Js",
+        ]
+    }
+
 ]

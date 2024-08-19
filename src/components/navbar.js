@@ -2,6 +2,7 @@ import downloadIcon from '../assets/download-icon.svg';
 import cvFile from '../assets/cv-file.pdf';
 import { navItemsLeft, navItemsRight } from '../contents/content';
 
+
 export default function Navbar() {
   return (
     <div className="bg-main-color rounded-b-2xl drop-shadow-lg flex justify-between items-center py-6 px-20">
@@ -21,5 +22,13 @@ export default function Navbar() {
 }
 
 function NavItem({ text }) {
-   return <p className="text-secondary-color text-sm font-bold hover:text-hover-secondary ">{text}</p>
+   return (
+    <button 
+    className="text-secondary-color text-sm font-bold hover:text-hover-secondary"
+    onClick={() => {
+
+    }}>
+      {text}
+    </button>
+   )
 }

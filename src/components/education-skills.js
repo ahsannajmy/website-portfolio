@@ -1,8 +1,8 @@
-import { educationList } from "../contents/content"
+import { educationList, skillList } from "../contents/content"
 
 export default function EducationSkills() {
   return (
-    <div className="bg-secondary-colo flex flex-col justify-between items-start max-w-5xl mx-auto py-20 gap-6">
+    <div className="bg-secondary-colo flex flex-row justify-evenly items-start max-w-5xl mx-auto py-20 gap-20">
       <div class="flex flex-col space-y-2">
         <h1 className="text-main-color text-lg-2 font-bold">Education</h1>
         <div className="flex flex-col gap-4">
@@ -16,9 +16,13 @@ export default function EducationSkills() {
           ))}
         </div>
       </div>
-      <div class="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-2">
         <h1 className="text-main-color text-lg-2 font-bold">Skills</h1>
-        <CardSkills/>
+        <div className="flex flex-col space-y-6">
+          {skillList.map((skill) => (
+            <CardSkills imgName={skill.imgName} skillList={skill.skillList}/>
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -35,6 +39,23 @@ function CardEducation({ range_tahun, nama_institusi, jurusan, deskripsi_lainnya
   )
 }
 
-function CardSkills() {
-  return; 
+function CardSkills({ imgName, skillList }) {
+  return (
+    <div className="flex flex-row gap-2">
+      <img src={imgName} alt="img-skills" className="w-[90px] h-[90px]"/>
+      <div className="flex flex-wrap gap-2 items-start">
+        {skillList.map((skill) => (
+          <Skills skill={skill}/>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Skills({ skill }) {
+  return (
+    <div className="bg-card-color p-2.5 drop-shadow-lg rounded-md">
+      <p className="text-main-color text-sm font-bold">{ skill }</p>
+    </div>
+  );
 }
