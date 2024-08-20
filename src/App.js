@@ -19,6 +19,7 @@ function App() {
         <EducationSkills/>
         <WavePrimary/>
         <Project/>
+        <WaveSecondary/>
       </div>
     </div>
   )
