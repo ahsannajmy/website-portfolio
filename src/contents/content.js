@@ -62,7 +62,7 @@ export const skillList = [
     },
     {
         imgName : gitImg
-    }
+    },
 ];
 
 
@@ -139,34 +139,44 @@ export const projectProperties = [
         projectName : "Admin Dashboard Tax Consultant",
         projectDesc : [
             `
-            Build a classification model using python with CNN and LSTM architecture also with other machine learning models
-            to predict or classify a criminal verdict. This prediction is based on the components inside of each documents
-            such as (articles, sentences, type of case, lawyer's name, judge's name, court location, and other components)
+            Build a admin dashboard for tax consulting to monitor team members.
             `,
             `
-            In this project i'm also collecting criminal verdict documents from official site of supreme court in indonesia
-            this collecting process was done through one of python library BeautifulSoup
-            `,
-            `
-            This project also includes gathering, processing and cleaned the documents that have been collected and applying
-            to an existing tag model and then proceed to the CNN, LSTM and other machine learning model for training for more
-            details here are my paper
+            Dashboard was built using django and tailwind css and for the database using postgresql that was hosted in
+            railway
             `
         ],
         skillList : [
-            'Deep Learning', 
-            'Keras', 
-            'gensim', 
-            'Machine Learning',
-            'Data Cleaning',
-            'Vectorization',
-            'NLTK',
-            'Web Scrapping'
+            'Django',
+            'Basic Auth',
+            'Postgresql',
+            'Railway'
         ],
         imgMainSkill : [
             pythonImg,
             gitImg
         ],
-        projectLink : ""
+        projectLink : "https://github.com/ahsannajmy/backend-konsultan-pajak"
+    },
+    {
+        projectName : "Discord Anime Bot",
+        projectDesc : [
+            `
+            Using discord module in python to connect and use myanimelist public apis to extract the data 
+            `,
+            `
+            The feature in this bot is finding the anime name based on the given input and will generate available
+            anime with its respective information
+            `
+        ],
+        skillList : [
+            "Python",
+            "HTTP Request",
+            "API"
+        ],
+        imgMainSkill : [
+            pythonImg
+        ],
+        projectLink : "https://github.com/ahsannajmy/discordAnimeSearchBot"
     }
 ]

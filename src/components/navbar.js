@@ -5,14 +5,14 @@ import { navItemsLeft, navItemsRight } from '../contents/content';
 
 export default function Navbar() {
   return (
-    <div className="bg-main-color rounded-b-2xl drop-shadow-lg flex justify-between items-center py-6 px-20">
-      <div className="flex space-x-1 items-center">
+    <div className="bg-main-color rounded-b-2xl drop-shadow-lg flex flex-col sm:flex-row justify-center sm:justify-between items-center py-6 px-20 gap-4">
+      <div className="flex flex-row items-center">
         <a href={cvFile}>
           <img src={downloadIcon} alt="Download icon" className='h-8 w-8 mt-2'></img>
         </a>
         <p className="text-secondary-color text-sm font-bold">{navItemsLeft[0]}</p>
       </div>
-      <div className="flex space-x-8 items-center">
+      <div className="flex flex-col sm:flex-row gap-8 items-center">
         {navItemsRight.map((navItem) => (
           <NavItem key={navItem} text={navItem}/>
         ))}

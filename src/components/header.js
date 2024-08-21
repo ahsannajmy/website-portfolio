@@ -3,14 +3,16 @@ import { headerContent } from '../contents/content';
 
 export default function Header() {
   return (
-    <div className="bg-main-color flex flex-row items-center max-w-5xl mx-auto py-20 gap-20">
+    <div className="bg-main-color flex flex-col sm:flex-row items-center max-w-5xl mx-auto px-10 py-20 gap-4 sm:gap-20">
       <div className='flex-shrink-0'>
         <img src={profileImage} alt="img-profile" className='rounded-full w-[262px] h-[262px] object-cover'></img>
       </div>
-      <div className='flex flex-col items-start gap-4'>
-        <h1 className='text-secondary-color text-lg font-bold'>Hi, I'm Ahsan</h1>
+      <div className='flex flex-col gap-4'>
+        <h1 className='text-secondary-color text-lg text-left font-bold'>Hi, I'm Ahsan</h1>
         <HeaderContent text={headerContent}/>
-        <ButtonSecondary text={"Projects"}/>
+        <div className='items-start'>
+          <ButtonSecondary text={"Projects"}/>
+        </div>
       </div>
     </div>
   );

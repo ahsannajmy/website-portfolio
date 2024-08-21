@@ -4,7 +4,7 @@ import { projectProperties } from "../contents/content";
 export default function Project() {
   return (
     <div className="bg-main-color">
-      <div className="justify-items-center flex flex-col max-w-5xl mx-auto py-20 gap-4">
+      <div className="justify-items-center flex flex-col max-w-5xl mx-auto py-20 px-10 sm:px-0 gap-4">
         <h1 className="text-lg-2 text-secondary-color font-bold text-center">Projects</h1>
         <Slider
           dots={true}
