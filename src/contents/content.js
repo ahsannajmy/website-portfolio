@@ -1,11 +1,23 @@
-import excelImg from "../assets/skills-1.png";
-import pythonImg from "../assets/skills-2.png"; 
-import awsImg from "../assets/skills-3.png";
-import javascriptImg from "../assets/skills-4.png";
-import dockerImg from "../assets/skills-5.png"
-import javaImg from "../assets/skills-6.png";
-import postgresImg from "../assets/skills-7.png";
-import gitImg from "../assets/skills-8.png";
+import excelImg from "../assets/skills/skills-1.png";
+import pythonImg from "../assets/skills/skills-2.png"; 
+import awsImg from "../assets/skills/skills-3.png";
+import javascriptImg from "../assets/skills/skills-4.png";
+import dockerImg from "../assets/skills/skills-5.png"
+import javaImg from "../assets/skills/skills-6.png";
+import postgresImg from "../assets/skills/skills-7.png";
+import gitImg from "../assets/skills/skills-8.png";
+
+import sertificate1 from "../assets/sertificates/sertificate-1.png";
+import sertificate2 from "../assets/sertificates/sertificate-2.png";
+import sertificate3a from "../assets/sertificates/sertificate-3a.png";
+import sertificate3b from "../assets/sertificates/sertificate-3b.png";
+import sertificate4a from "../assets/sertificates/sertificate-4a.png";
+import sertificate4b from "../assets/sertificates/sertificate-4b.png";
+import sertificate4c from "../assets/sertificates/sertificate-4c.png";
+import sertificate5 from "../assets/sertificates/sertificate-5.png";
+import sertificate6a from "../assets/sertificates/sertificate-6a.png";
+import sertificate6b from "../assets/sertificates/sertificate-6b.png";
+import sertificate6c from "../assets/sertificates/sertificate-6c.png";
 
 export const headerContent = `
     I recently received my bachelor's degree in computer science. 
@@ -179,4 +191,13 @@ export const projectProperties = [
         ],
         projectLink : "https://github.com/ahsannajmy/discordAnimeSearchBot"
     }
+]
+
+export const sertificates = [
+    [sertificate1],
+    [sertificate2],
+    [sertificate3a,sertificate3b],
+    [sertificate4a,sertificate4b,sertificate4c],
+    [sertificate5],
+    [sertificate6a,sertificate6b,sertificate6c]
 ]

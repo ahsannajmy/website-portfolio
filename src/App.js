@@ -5,7 +5,8 @@ import Project from './components/projects.js';
 import { WavePrimary, WaveSecondary } from './contents/wave.js';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Sertificate from './components/sertificate.js';
+import './index.css';
 
 function App() {
   return (
@@ -18,8 +19,13 @@ function App() {
         <WaveSecondary/>
         <EducationSkills/>
         <WavePrimary/>
+      </div>
+      <div className='bg-main-color mt-[-1px]'>
         <Project/>
+      </div>
+      <div className='bg-secondary-color mt-[-3px]'>
         <WaveSecondary/>
+        <Sertificate/>
       </div>
     </div>
   )
