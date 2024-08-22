@@ -32,7 +32,6 @@ export const headerContent = `
     I have taken several courses related to both data analyst and backend development roles.
 `;
 
-export const navItemsRight = ["HOME", "ABOUT ME", "PROJECTS", "SERTIFICATE", "CONTACT"];
 export const navItemsLeft = ["CV Download"];
 
 export const educationList = [
