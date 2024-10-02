@@ -1,52 +1,35 @@
-import Navbar from './components/navbar.js';
-import Header from './components/header.js'  
-import EducationSkills from './components/education-skills.js';
-import Project from './components/projects.js';
-import { WavePrimary, WaveSecondary } from './contents/wave.js';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Sertificate from './components/sertificate.js';
-import './index.css';
-import { useRef } from 'react';
-import Footer from './components/footer.js';
+import { Education } from "./education/education";
+import { Header } from "./header/header";
+import { Navbar } from "./navbar/navbar";
+import { useRef } from "react";
+import { Skill } from "./skills/skill";
+import { Project } from "./project/project";
+import { Sertificate } from "./sertificate/sertificate";
+import { Footer } from "./footer/footer";
 
 function App() {
-  const homeRef = useRef(null);
-  const eduskillRef = useRef(null);
+  const headerRef = useRef(null);
+  const educationRef = useRef(null);
+  const skillRef = useRef(null);
   const projectRef = useRef(null);
   const sertificateRef = useRef(null);
-  const contactRef = useRef(null);
-
   return (
-    <div>
-      <div className='bg-main-color' ref={homeRef}>
-        <Navbar 
-          homeRef={homeRef}
-          eduskillRef={eduskillRef}
-          projectRef={projectRef}
-          sertificateRef={sertificateRef}
-          contactRef={contactRef}
-        />
-        <Header/>
-      </div>
-      <div className='bg-secondary-color' ref={eduskillRef}>
-        <WaveSecondary/>
-        <EducationSkills/>
-        <WavePrimary/>
-      </div>
-      <div className='bg-main-color mt-[-1px]' ref={projectRef}>
-        <Project/>
-      </div>
-      <div className='bg-secondary-color mt-[-3px]' ref={sertificateRef}>
-        <WaveSecondary/>
-        <Sertificate/>
-        <WavePrimary/>
-      </div>
-      <div className='bg-main-color mt-[-1px]' ref={contactRef}>
-        <Footer/>
-      </div>
-    </div>
-  )
+    <>
+      <Navbar
+        homeRef={headerRef}
+        eduRef={educationRef}
+        skillRef={skillRef}
+        projectRef={projectRef}
+        sertificateRef={sertificateRef}
+      />
+      <Header ref={headerRef} />
+      <Education ref={educationRef} />
+      <Skill ref={skillRef} />
+      <Project ref={projectRef} />
+      <Sertificate ref={sertificateRef} />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
