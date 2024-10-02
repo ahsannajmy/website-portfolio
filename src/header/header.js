@@ -3,6 +3,9 @@ import profile from "../assets/img-profile.png";
 import { Button } from "./components/button";
 
 export const Header = forwardRef((props, ref) => {
+  const handleScroll = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div ref={ref} className="py-20 px-10">
@@ -28,7 +31,10 @@ export const Header = forwardRef((props, ref) => {
               I'm a Backend Developer and Data Analyst Enthusiast
             </span>
             <div className="animate-slideUp" style={{ animationDelay: "1.5s" }}>
-              <Button label="Projects" />
+              <Button
+                label="Projects"
+                onClick={() => handleScroll(props.projectRef)}
+              />
             </div>
           </div>
         </div>

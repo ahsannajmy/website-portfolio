@@ -22,7 +22,7 @@ function App() {
         projectRef={projectRef}
         sertificateRef={sertificateRef}
       />
-      <Header ref={headerRef} />
+      <Header ref={headerRef} projectRef={projectRef} />
       <Education ref={educationRef} />
       <Skill ref={skillRef} />
       <Project ref={projectRef} />
