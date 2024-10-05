@@ -31,9 +31,9 @@ export const ProjectCard = (props) => {
         </div>
         <div
           className="absolute bottom-2 right-2 bg-transparent
-         hover:bg-main-color duration-500 p-2 rounded-lg hover:text-white flex items-center"
+         hover:bg-main-color duration-500 p-2 rounded-lg hover:text-white"
         >
-          <a href={props.project_link}>
+          <a href={props.project_link} className="flex items-center">
             <span className="text-[8px] sm:text-xs">More details...</span>
           </a>
         </div>
