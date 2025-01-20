@@ -19,6 +19,7 @@ export const Education = forwardRef((props, ref) => {
                   institute={education.nama_institusi}
                   major={education.jurusan}
                   description={education.deskripsi_lainnya}
+                  animationDelay={index * 0.5}
                 />
               </>
             ))}

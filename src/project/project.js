@@ -10,8 +10,8 @@ export const Project = forwardRef((props, ref) => {
           <span className="text-center text-2xl sm:text-4xl font-bold">
             Here are the project that was build around my tech stacks
           </span>
-          <div className="grid grid-cols-1 md:grid-cols-1 sm:grid-cols-2 gap-4">
-            {projectProperties.map((project) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {projectProperties.map((project, index) => (
               <>
                 <ProjectCard
                   project_image={project.projectImage}
@@ -20,6 +20,8 @@ export const Project = forwardRef((props, ref) => {
                   skill_list={project.skillList}
                   img_skill={project.imgMainSkill}
                   project_link={project.projectLink}
+                  index={index}
+                  animationDelay={index * 0.5}
                 />
               </>
             ))}

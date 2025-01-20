@@ -4,7 +4,12 @@ import { TechStack } from "./techStack";
 export const ProjectCard = (props) => {
   return (
     <>
-      <div className="text-main-color px-10 py-16 rounded-lg shadow-lg w-full relative flex justify-center items-center">
+      <div
+        className={`text-main-color px-10 py-16 rounded-lg shadow-lg w-full relative flex justify-center items-center ${
+          props.index % 2 === 0 ? "animate-slideRight" : "animate-slideLeft"
+        }`}
+        style={{ animationDelay: `${props.animationDelay}s` }}
+      >
         <div className="flex flex-col gap-4 items-center">
           <span className="font-semibold text-2xl text-center">
             {props.project_name}

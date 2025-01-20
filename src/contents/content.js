@@ -19,6 +19,7 @@ import excelPortfolio from "../assets/project/excel-portfolio.png";
 import dashboardConsultant from "../assets/project/dashboard-tax-consultant.png";
 import discordBot from "../assets/project/discord-bot.png";
 import ourastoreClone from "../assets/project/ourastore-clone.png";
+import xsisProjectMedId from "../assets/project/xsisProjectMedId.png";
 
 export const educationList = [
   {
@@ -127,13 +128,47 @@ export const projectProperties = [
     imgMainSkill: [javascriptImg, awsImg, postgresImg],
     projectLink: "https://github.com/basazard/ourastore/tree/ahsan",
   },
+  {
+    projectImage: xsisProjectMedId,
+    projectName: "Xsis Bootcamp Project (Med.Id)",
+    skillList: ["Spring Boot", "Jquery", "Postgresql", "Postman"],
+    imgMainSkill: [javaImg, postgresImg, javascriptImg],
+    projectLink: "#",
+  },
 ];
 
+// export const sertificates = [
+//   sertificate1,
+//   sertificate2,
+//   sertificate3a,
+//   sertificate4a,
+//   sertificate5,
+//   sertificate6a,
+// ];
+
 export const sertificates = [
-  sertificate1,
-  sertificate2,
-  sertificate3a,
-  sertificate4a,
-  sertificate5,
-  sertificate6a,
+  {
+    img: sertificate1,
+    name: "Toefl ITP Certification",
+  },
+  {
+    img: sertificate2,
+    name: "Aws Cloud Practicioner Certification",
+  },
+  {
+    img: sertificate3a,
+    name: "Dicoding Backend Class Certification",
+  },
+  {
+    img: sertificate4a,
+    name: "Dicoding Javascript Class Certification",
+  },
+  {
+    img: sertificate5,
+    name: "Udemy Data Analyst Course Completion Certification",
+  },
+  {
+    img: sertificate6a,
+    name: "Myskill Excel Bootcamp Certification",
+  },
 ];
